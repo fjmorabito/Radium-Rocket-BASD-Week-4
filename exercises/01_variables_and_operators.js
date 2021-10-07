@@ -11,3 +11,9 @@ var var_3 = var_1 + var_2;
 var string_1 = "Morabito ";
 var string_2 = "Federico";
 var string_3 = string_1 + string_2;
+
+//c) Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el resultado de la suma en una 3er variable (utilizar length).
+
+var string_1 = "Morabito ";
+var string_2 = "Federico";
+var string_3 = string_1.length + string_2-length;
