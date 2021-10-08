@@ -14,11 +14,11 @@ clarifying that one of the parameters has an error and return the NaN value as a
 
 function validateAndSum(a, b) {
     if (typeof a !== 'number') {
-        alert('The result of exercise 6-b is: the a variable is not a number');
-        return NaN;
+        alert('The result of exercise 6-b is: the first variable is not a number');
+        return;
     } else if (typeof b !== 'number') {
-        alert('The result of exercise 6-b is: the b variable is not a number');
-        return NaN;
+        alert('The result of exercise 6-b is: the second variable is not a number');
+        return;
     }
     else {
         return a + b;
@@ -42,3 +42,23 @@ function validateInteger(number) {
 
 console.log(validateInteger(8.6));
 
+/*d) To the sum function of exercise 6b) add a call that validates that the numbers are integers. In case there are decimals,
+ show an alert with the error and return the number converted to integer (rounded).*/
+
+function validateAndSum(param1, param2) {
+    if (typeof param1 !== 'number') {
+        alert('The result of exercise 6-d is: the first variable is not a number');
+        return;
+    } else if (typeof param2 !== 'number') {
+        alert('The result of exercise 6-d is: the second variable is not a number');
+        return;
+    }
+    else if (param1 % 1 != 0 || param2 % 1 != 0) {
+        alert('One of the parameters is not integer. The result is going to be rounded.');
+        return Math.round(param1 + param2);
+    } else {
+        return param1 + param2;
+    }
+}
+
+console.log('The result of exercise 6-d is:', validateAndSum(15, 4.98));
