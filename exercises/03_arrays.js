@@ -4,8 +4,7 @@
 
 var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
     'Noviembre', 'Diciembre'];
-var arrayForExerciseG = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
-    'Noviembre', 'Diciembre'];
+var arrayForExerciseG = Object.assign([], months)
 console.log('The result of exercise 3-a is: ', months[4], ' and ', months[10]);
 
 /*b) Sort the array of months alphabetically and show in console.*/
@@ -34,3 +33,8 @@ console.log('The result of exercise 3-e is: ', months);
 
 var joinedArrayElements = months.join('-');
 console.log('The result of exercise 3-f is: ', joinedArrayElements);
+
+/*g) Create a copy of the array that contains the elements from Mayo to Noviembre*/
+
+var monthsCopy = arrayForExerciseG.slice(4, 11);
+console.log('The result of exercise 3-g is: ', monthsCopy);
