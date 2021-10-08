@@ -21,17 +21,17 @@ if (randomNumber >= 0.5) {
 
 var age = Math.round(Math.random() * 100);
 if (age < 2) {
-    alert("Bebe")
+    alert('Bebe')
 } else if (age <= 12) {
-    alert("Niño")
+    alert('Niño');
 } else if (age <= 19) {
-    alert("Adolescente")
+    alert('Adolescente');
 } else if (age <= 30) {
-    alert("Joven")
+    alert('Joven');
 } else if (age <= 60) {
-    alert("Adulto")
+    alert('Adulto');
 } else if (age <= 75) {
-    alert("Adulto mayor")
+    alert('Adulto mayor');
 } else {
-    alert("Anciano")
-}
+    alert('Anciano');
+};
