@@ -5,7 +5,8 @@ result in a variable, showing the value of said variable in the browser console.
 
 function sum(a, b) {
     return a + b;
-}
+};
+
 var resultSum = sum(80, 150);
 console.log('The result of exercise 6-a is: ', resultSum);
 
@@ -23,7 +24,8 @@ function validateAndSum(a, b) {
     else {
         return a + b;
     }
-}
+};
+
 var resultAlteredSum = sum(5, 4);
 console.log('The result of exercise 6-b is:', resultAlteredSum);
 
@@ -38,14 +40,14 @@ function validateInteger(number) {
     } else {
         return false;
     }
-}
+};
 
 console.log(validateInteger(8.6));
 
 /*d) To the sum function of exercise 6b) add a call that validates that the numbers are integers. In case there are decimals,
  show an alert with the error and return the number converted to integer (rounded).*/
 
-function validateAndSum(param1, param2) {
+function completeValidateAndSum(param1, param2) {
     if (typeof param1 !== 'number') {
         alert('The result of exercise 6-d is: the first variable is not a number');
         return;
@@ -59,6 +61,7 @@ function validateAndSum(param1, param2) {
     } else {
         return param1 + param2;
     }
-}
+};
 
-console.log('The result of exercise 6-d is:', validateAndSum(15, 4.98));
+console.log('The result of exercise 6-d is:', completeValidateAndSum(15, 4.98));
+
