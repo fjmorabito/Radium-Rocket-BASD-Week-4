@@ -20,6 +20,13 @@ console.log('The result of exercise 2-c is: ', threeChart);
 /*d) Create a string type variable with at least 10 characters and generate a new one with the first letter uppercased and the
  rest lowercased. Save the result in a new variable.*/
 
- var tenCharts = "manufactured by arikan"; 
- var firstUppercase = tenCharts.substring(0,1).toUpperCase() + tenCharts.substring(1 , tenCharts.length).toLowerCase();
- console.log('The result of exercise 2-d is: ', firstUppercase);
+var tenCharts = "manufactured by arikan";
+var firstUppercase = tenCharts.substring(0, 1).toUpperCase() + tenCharts.substring(1, tenCharts.length).toLowerCase();
+console.log('The result of exercise 2-d is: ', firstUppercase);
+
+/*e) Create a string type variable with at least 10 characters and a blank space. Find the position of the first blank space
+and save it on a new variable.*/
+
+var phraseWithBlankedSpace = "under license from";
+var blankPosition = phraseWithBlankedSpace.indexOf(" ");
+console.log('The result of exercise 2-e is: ', blankPosition);
