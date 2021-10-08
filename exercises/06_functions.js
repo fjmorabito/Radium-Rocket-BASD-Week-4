@@ -42,7 +42,7 @@ function validateInteger(number) {
     }
 };
 
-console.log(validateInteger(8.6));
+console.log('The result of exercise 6-c is:', validateInteger(8.6));
 
 /*d) To the sum function of exercise 6b) add a call that validates that the numbers are integers. In case there are decimals,
  show an alert with the error and return the number converted to integer (rounded).*/
@@ -56,7 +56,7 @@ function completeValidateAndSum(param1, param2) {
         return;
     }
     else if (param1 % 1 != 0 || param2 % 1 != 0) {
-        alert('One of the parameters is not integer. The result is going to be rounded.');
+        alert('The result of exercise 6-d is: one of the parameters is not integer. The result is going to be rounded.');
         return Math.round(param1 + param2);
     } else {
         return param1 + param2;
@@ -65,3 +65,19 @@ function completeValidateAndSum(param1, param2) {
 
 console.log('The result of exercise 6-d is:', completeValidateAndSum(15, 4.98));
 
+/* part e) Convert the validation of exercise 6b) into a separate function and call it within the sum function, checking that
+ everything continues to work the same.*/
+
+function validateParameter(param) {
+    if (typeof param !== 'number') {
+        alert("The result of exercise 6-e is: the parameter is not a number");
+        return;
+    }
+    return param;
+};
+
+function sumWithoutValidate(a, b) {
+    return (validateParameter(a) + validateParameter(b));
+};
+
+console.log('The result of exercise 6-e is:', sumWithoutValidate(5, 'hello'));
