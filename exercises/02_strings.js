@@ -10,3 +10,10 @@ console.log('The result of exercise 2-a is: ', shopName.toUpperCase());
 var newShopName = 'efficiently sport'
 var shopName5Characthers = newShopName.substring(0, 5);
 console.log('The result of exercise 2-b is: ', shopName5Characthers);
+
+//c) Create a string type variable with at least 10 characters and generate a new one with the last 3 characters from it.
+
+var stringOf10Charts = 'Radium Rocket web developer program';
+var threeChart = stringOf10Charts.substring(stringOf10Charts.length - 3, stringOf10Charts.length);
+console.log('The result of exercise 2-c is: ', threeChart);
+
