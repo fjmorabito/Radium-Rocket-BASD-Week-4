@@ -18,3 +18,9 @@ console.log('The result of exercise 3-b is: ', months);
 months.unshift("First Element");
 months.push("Last Element");
 console.log('The result of exercise 3-c is: ', months);
+
+/*d) Remove an element at the beggining and at the end of the array*/
+
+months.shift();
+months.pop();
+console.log('The result of exercise 3-d is: ', months);
