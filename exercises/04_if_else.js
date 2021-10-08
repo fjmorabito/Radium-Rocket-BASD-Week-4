@@ -23,7 +23,7 @@ var age = Math.round(Math.random() * 100);
 if (age < 2) {
     alert('Bebe')
 } else if (age <= 12) {
-    alert('Niño');
+    alert('Nino');
 } else if (age <= 19) {
     alert('Adolescente');
 } else if (age <= 30) {
