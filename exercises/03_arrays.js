@@ -4,11 +4,17 @@
 
 var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
     'Noviembre', 'Diciembre'];
-
+var arrayForExerciseG = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
+    'Noviembre', 'Diciembre'];
 console.log('The result of exercise 3-a is: ', months[4], ' and ', months[10]);
 
-/* part b) sort the array of months alphabetically and show in console.*/
+/*b) Sort the array of months alphabetically and show in console.*/
 
-var alphabeticOrderArray= months.sort();
+months.sort();
+console.log('The result of exercise 3-b is: ', months);
 
-console.log('The result of exercise 3-b is: ', alphabeticOrderArray);
+/*c) Add an element at the beggining and the end of the array*/
+
+months.unshift("First Element");
+months.push("Last Element");
+console.log('The result of exercise 3-c is: ', months);
