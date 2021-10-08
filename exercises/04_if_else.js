@@ -10,3 +10,28 @@ if (randomNumber >= 0.5) {
     alert('Lower than 0,5', randomNumber);
 };
 
+/*b) Create an "Age" variable that contains an integer between 0 and 100 and displays the following alert messages:
+"Bebé" if the age is less than 2 years
+"Niño" if the age is between 2 and 12 years
+"Adolescente" if the age is between 13 and 19 years
+"Joven" if the age is between 20 and 30 years
+"Adulto" between 31 and 60 years
+“Adulto mayor” between 61 and 75 years
+"Anciano" if older than 75 years*/
+
+var age = Math.round(Math.random() * 100);
+if (age < 2) {
+    alert("Bebe")
+} else if (age <= 12) {
+    alert("Niño")
+} else if (age <= 19) {
+    alert("Adolescente")
+} else if (age <= 30) {
+    alert("Joven")
+} else if (age <= 60) {
+    alert("Adulto")
+} else if (age <= 75) {
+    alert("Adulto mayor")
+} else {
+    alert("Anciano")
+}
