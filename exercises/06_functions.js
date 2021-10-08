@@ -27,3 +27,18 @@ function validateAndSum(a, b) {
 var resultAlteredSum = sum(5, 4);
 console.log('The result of exercise 6-b is:', resultAlteredSum);
 
+/*c) Create a validate integer function that takes a number as a parameter and returns true if it is an integer.*/
+
+function validateInteger(number) {
+    if (typeof number !== 'number') {
+        console.log('The result of exercise 6-c is: the parameter is not a number');
+        return;
+    } else if (number % 1 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(validateInteger(8.6));
+
