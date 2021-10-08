@@ -17,3 +17,9 @@ var stringOf10Charts = 'Radium Rocket web developer program';
 var threeChart = stringOf10Charts.substring(stringOf10Charts.length - 3, stringOf10Charts.length);
 console.log('The result of exercise 2-c is: ', threeChart);
 
+/*d) Create a string type variable with at least 10 characters and generate a new one with the first letter uppercased and the
+ rest lowercased. Save the result in a new variable.*/
+
+ var tenCharts = "manufactured by arikan"; 
+ var firstUppercase = tenCharts.substring(0,1).toUpperCase() + tenCharts.substring(1 , tenCharts.length).toLowerCase();
+ console.log('The result of exercise 2-d is: ', firstUppercase);
