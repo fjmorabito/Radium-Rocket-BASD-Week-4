@@ -22,3 +22,13 @@ for (counter = 0; counter <= fiveWordsArray.length - 1; counter++) {
     emptySentence += (fiveWordsArray[counter]);
 };
 alert(emptySentence);
+
+/* part d) Create an empty array and with a for loop of 10 repetitions, fill the array with the number of the repetition, that is, at the 
+end of the execution of the for loop, there should be 10 elements within the array, from number 0 to number 9. 
+Show by the browser console the final array*/
+
+var numericalArray = [];
+for (counter = 0; counter <= 9; counter++) {
+    numericalArray[counter] = counter;
+}
+console.log('The result of exercise 5-d is: ', numericalArray);
