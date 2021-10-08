@@ -5,9 +5,9 @@ show an alert with a message "Greater than 0,5". If not, then show an alert with
 
 var randomNumber = Math.random(0, 1);
 if (randomNumber >= 0.5) {
-    alert('Greater than 0,5', randomNumber);
+    alert('The result of exercise 4-a is: Greater than 0,5');
 } else {
-    alert('Lower than 0,5', randomNumber);
+    alert('The result of exercise 4-a is: Lower than 0,5');
 };
 
 /*b) Create an "Age" variable that contains an integer between 0 and 100 and displays the following alert messages:
@@ -21,17 +21,17 @@ if (randomNumber >= 0.5) {
 
 var age = Math.round(Math.random() * 100);
 if (age < 2) {
-    alert('Bebe')
+    alert('The result of exercise 4-b is: Baby')
 } else if (age <= 12) {
-    alert('Nino');
+    alert('The result of exercise 4-b is: Child');
 } else if (age <= 19) {
-    alert('Adolescente');
+    alert('The result of exercise 4-b is: Teenager');
 } else if (age <= 30) {
-    alert('Joven');
+    alert('The result of exercise 4-b is: Young');
 } else if (age <= 60) {
-    alert('Adulto');
+    alert('The result of exercise 4-b is: Adult');
 } else if (age <= 75) {
-    alert('Adulto mayor');
+    alert('The result of exercise 4-b is: older Adult');
 } else {
-    alert('Anciano');
+    alert('The result of exercise 4-b is: Old');
 };
