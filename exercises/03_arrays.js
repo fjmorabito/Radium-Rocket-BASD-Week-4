@@ -24,3 +24,8 @@ console.log('The result of exercise 3-c is: ', months);
 months.shift();
 months.pop();
 console.log('The result of exercise 3-d is: ', months);
+
+/*e) Invert the array order*/
+
+months.reverse();
+console.log('The result of exercise 3-e is: ', months);
