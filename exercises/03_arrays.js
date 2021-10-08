@@ -5,5 +5,10 @@
 var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
     'Noviembre', 'Diciembre'];
 
-console.log('The result of exercise 2-f is: ', months[4], ' and ', months[10]);
+console.log('The result of exercise 3-a is: ', months[4], ' and ', months[10]);
 
+/* part b) sort the array of months alphabetically and show in console.*/
+
+var alphabeticOrderArray= months.sort();
+
+console.log('The result of exercise 3-b is: ', alphabeticOrderArray);
