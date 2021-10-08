@@ -29,3 +29,8 @@ console.log('The result of exercise 3-d is: ', months);
 
 months.reverse();
 console.log('The result of exercise 3-e is: ', months);
+
+/*f) Join all the elements of the array in a single string where each month is separated by a hyphen*/
+
+var joinedArrayElements = months.join('-');
+console.log('The result of exercise 3-f is: ', joinedArrayElements);
