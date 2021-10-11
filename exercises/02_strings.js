@@ -35,7 +35,8 @@ console.log('The result of exercise 2-e is: ', blankPosition);
  a new string that have the first letter of both words uppercased and the rest on lowercase.*/
 
 var longPhrase = 'diamond hOLDING and ITS affiliates';
-var phraseModified = longPhrase.substring(0, 1).toUpperCase() + longPhrase.substring(1, longPhrase.indexOf(' ')).toLowerCase() +
-    ' ' + longPhrase.substring(longPhrase.indexOf(' ') + 1, longPhrase.indexOf(' ') + 2).toUpperCase() + longPhrase.substring(longPhrase.indexOf(' ')
+var firstBlankSpace = longPhrase.indexOf(' ');
+var phraseModified = longPhrase.substring(0, 1).toUpperCase() + longPhrase.substring(1, firstBlankSpace).toLowerCase() +
+    ' ' + longPhrase.substring(firstBlankSpace + 1, firstBlankSpace + 2).toUpperCase() + longPhrase.substring(firstBlankSpace
         + 2, longPhrase.length).toLowerCase();
 console.log('The result of exercise 2-f is: ', phraseModified);
