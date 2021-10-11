@@ -6,7 +6,6 @@ result in a variable, showing the value of said variable in the browser console.
 function sum(a, b) {
     return a + b;
 };
-
 var resultSum = sum(80, 150);
 console.log('The result of exercise 6-a is: ', resultSum);
 
@@ -25,7 +24,6 @@ function validateAndSum(a, b) {
         return a + b;
     }
 };
-
 var resultAlteredSum = sum(5, 4);
 console.log('The result of exercise 6-b is:', resultAlteredSum);
 
@@ -41,7 +39,6 @@ function validateInteger(number) {
         return false;
     }
 };
-
 console.log('The result of exercise 6-c is:', validateInteger(8.6));
 
 /*d) To the sum function of exercise 6b) add a call that validates that the numbers are integers. In case there are decimals,
@@ -62,7 +59,6 @@ function completeValidateAndSum(param1, param2) {
         return param1 + param2;
     }
 };
-
 console.log('The result of exercise 6-d is:', completeValidateAndSum(15, 4.98));
 
 /* part e) Convert the validation of exercise 6b) into a separate function and call it within the sum function, checking that
@@ -75,9 +71,7 @@ function validateParameter(param) {
     }
     return param;
 };
-
 function sumWithoutValidate(a, b) {
     return (validateParameter(a) + validateParameter(b));
 };
-
 console.log('The result of exercise 6-e is:', sumWithoutValidate(5, 'hello'));

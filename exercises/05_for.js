@@ -10,6 +10,7 @@ for (counter = 0; counter < fiveWordsArray.length; counter++) {
 };
 
 /*b) To the previous array, convert the first letter of each word to uppercase and show an alert for each modified word. */
+
 alert('The result of exercise 5-b is: ');
 for (counter = 0; counter < fiveWordsArray.length; counter++) {
     alert(fiveWordsArray[counter].substring(0, 1).toUpperCase() + fiveWordsArray[counter].substring(1));

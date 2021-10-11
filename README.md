@@ -15,4 +15,4 @@ To visualize changes and see this demo, go to:
 
 - Download folder from this repository.
 - Double click html file.
-- The result of each exercises will be shown in the console and in the alerts.
+- The result of each exercises will be shown in the browser's console and alerts.
